@@ -47,6 +47,7 @@ function App(){
     setLoading("Loading...")
     setSelected(null)
     setTotalSteps(0)
+    setPhoto([])
     setTimeout(()=>{
       setLoading("")
       fetching()

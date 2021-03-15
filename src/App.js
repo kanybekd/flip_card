@@ -5,8 +5,8 @@ import axios from "axios";
 import "./App.css"
 
 const mainUrl = "https://api.unsplash.com/photos/"
-const key = `${process.env.REACT_APP_ACESS_KEY}`
-
+// const key = `${process.env.REACT_APP_ACESS_KEY}`
+const key = '67dzJ6HsOJ0oE9moFGN9_AGJ-de6jwkL-CAULtu3QWg'
 
 function App(){
   const [photo, setPhoto] = useState([])
@@ -16,8 +16,7 @@ function App(){
   const [totalSteps, setTotalSteps] = useState(0)
   const [reset, setReset] = useState(false)
 
-
-  const axiosing = () => {
+  const fetching = () => {
     const url1 = `${mainUrl}/?client_id=${key}&page=${3}`;
     const url2 = `${mainUrl}/?client_id=${key}&page=${4}`;
     axios
@@ -50,7 +49,7 @@ function App(){
     setTotalSteps(0)
     setTimeout(()=>{
       setLoading("")
-      axiosing()
+      fetching()
     },500)
   },[reset])
   const handleClick = (id)=>{

@@ -79,3 +79,20 @@ button{
   background-color: rgb(78, 78, 179);
   color:white;
 }
+
+@media screen and (max-width: 385px) {
+  #click{
+    position: absolute;
+    top:400px;
+    right: 35%;
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    color: rgb(78, 78, 179);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
